@@ -5,8 +5,8 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        tools:context="com.sample.foo.samplecalculator.MainActivity">
+        tools:context="com.sample.foo.samplecalculator.MainActivity"
+        tools:ignore="Autofill,LabelFor,TextFields,HardcodedText">
 
         <TextView
             android:id="@+id/infoTextView"
@@ -24,7 +24,8 @@
             android:gravity="bottom"
             android:lines="2"
             android:maxLines="2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+             />
 
         <Button
             android:id="@+id/buttonSeven"
@@ -48,7 +49,9 @@
             android:layout_marginTop="242dp"
             android:layout_toRightOf="@id/buttonSeven"
             android:text="8"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonSeven" />
 
         <Button
             android:id="@+id/buttonNine"
@@ -56,11 +59,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="0dp"
             android:layout_marginTop="242dp"
             android:layout_toRightOf="@id/buttonEight"
             android:text="9"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonEight"
+            android:layout_marginLeft="0dp" />
 
         <Button
             android:id="@+id/buttonDivide"
@@ -72,7 +77,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonNine"
             android:text="/"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonNine" />
 
         <Button
             android:id="@+id/buttonMultiply"
@@ -84,7 +91,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonSix"
             android:text="*"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonSix" />
 
         <Button
             android:id="@+id/buttonSix"
@@ -96,7 +105,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonEight"
             android:text="6"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonEight" />
 
         <Button
             android:id="@+id/buttonFive"
@@ -108,7 +119,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonSeven"
             android:text="5"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonSeven" />
 
         <Button
             android:id="@+id/buttonFour"
@@ -146,7 +159,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonSeven"
             android:text="2"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonSeven" />
 
         <Button
             android:id="@+id/buttonThree"
@@ -158,7 +173,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonEight"
             android:text="3"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_toEndOf="@id/buttonEight"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonSubtract"
@@ -170,7 +187,9 @@
             android:layout_marginTop="0dp"
             android:layout_toRightOf="@id/buttonThree"
             android:text="-"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/buttonThree" />
 
         <Button
             android:id="@+id/buttonAdd"
@@ -182,7 +201,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="+"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_alignStart="@+id/buttonSubtract" />
 
         <Button
             android:id="@+id/buttonClear"
@@ -195,10 +216,11 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="0dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
             android:text="Clear"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignEnd="@id/buttonAdd" />
 
         <Button
             android:id="@+id/buttonTan"
@@ -210,7 +232,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Tan"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonSix"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonEqual"
@@ -229,7 +253,8 @@
             android:layout_toEndOf="@+id/buttonZero"
             android:layout_toRightOf="@+id/buttonZero"
             android:text="="
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignEnd="@id/buttonNine" />
 
         <Button
             android:id="@+id/buttonZero"
@@ -245,7 +270,9 @@
             android:layout_marginTop="0dp"
             android:layout_marginRight="0dp"
             android:text="0"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignEnd="@id/buttonEight"
+            android:layout_marginEnd="0dp" />
 
         <Button
             android:id="@+id/buttonSin"
@@ -257,7 +284,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Sin"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonOne"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonASin"
@@ -269,7 +298,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Cosec"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonFour"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonDot"
@@ -295,7 +326,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Sec"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonFive"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonCos"
@@ -307,7 +340,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Cos"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonFive"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonE"
@@ -319,7 +354,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="e"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonAdd"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonPI"
@@ -331,7 +368,9 @@
             android:layout_marginTop="1dp"
             android:layout_toRightOf="@+id/buttonAdd"
             android:text="PI"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="-33dp"
+            android:layout_toEndOf="@+id/buttonAdd" />
 
         <Button
             android:id="@+id/buttonATan"
@@ -343,7 +382,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Cot"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonSix"
+            android:layout_marginStart="0dp" />
         <Button
             android:id="@+id/buttonLog"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -354,7 +395,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Log"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonFour"
+            android:layout_marginStart="0dp" />
         <Button
             android:id="@+id/buttonLn"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -365,7 +408,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="Ln"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonFive"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonPow"
@@ -377,7 +422,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="^"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_alignStart="@+id/buttonSix"
+            android:layout_marginStart="0dp" />
 
         <Button
             android:id="@+id/buttonP"
@@ -389,7 +436,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="P"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/buttonPow"
+            android:layout_marginStart="0dp" />
         <Button
             android:id="@+id/buttonC"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -400,7 +449,9 @@
             android:layout_marginLeft="0dp"
             android:layout_marginTop="0dp"
             android:text="C"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/buttonP" />
     </RelativeLayout>
 </layout>
 
